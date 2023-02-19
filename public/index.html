@@ -33,201 +33,74 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
-        <div class="container">
-          <span id="home-page-link" class="navbar-brand cursor"
-            >Party Cakes</span
-          >
-
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Party Cake</a>
           <button
-            class="navbar-toggler collapsed"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarColor01"
-            aria-controls="navbarColor01"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="bi bi-list"></i>
+            <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--  <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cakes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sweets</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Designers
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  <li><a class="dropdown-item" href="#">Log In</a></li>
 
-          <div
-            class="navbar-collapse collapse d-flex-md justify-content-between"
-            id="navbarColor01"
-          >
-            <div>
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <span
-                    id="about-page-link"
-                    class="nav-link cursor"
-                    aria-current="page"
-                    >About</span
-                  >
-                </li>
-                <li class="nav-item">
-                  <span
-                    id="cakes-page-link"
-                    class="nav-link cursor"
-                    aria-current="page"
-                    >Cakes</span
-                  >
-                </li>
-                <li class="nav-item">
-                  <span
-                    id="sweets-page-link"
-                    class="nav-link cursor"
-                    aria-current="page"
-                    >Sweets</span
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <span
-                    id="signup-page-link"
-                    class="nav-link cursor"
-                    aria-current="page"
-                    >Signup</span
-                  >
-                </li>
-                <li class="nav-item">
-                  <span
-                    id="login-page-link"
-                    class="nav-link cursor"
-                    aria-current="page"
-                    >Login</span
-                  >
-                </li>
-              </ul>
-            </div>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li> -->
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
       </nav>
     </header>
 
-    <main>
-      <!-- home page -->
-      <div id="home-page" class="d-block">
-        <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">Party Cake</h1>
-              <hr />
-            </div>
-          </div>
-          <!-- <img
-            class="center"
-            src="./assets/images/cake.jpg"
-            alt="cake and logo"
-          /> -->
-          <!-- <p>home page content</p> -->
-        </div>
-      </div>
+    <main></main>
 
-      <!-- about page -->
-      <div id="about-page" class="d-none">
-        <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">ABOUT Party Cakes</h1>
-              <hr />
-              <p>informative text lorem 30</p>
-              <hr />
-              <h2 class="fs-5">how it works</h2>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- cakes page -->
-      <div id="cakes-page" class="d-none">
-        <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">CAKES</h1>
-              <h2 class="fs-5">Here you can choose your cake</h2>
-              <hr />
-            </div>
-          </div>
-
-          <p>about page content</p>
-        </div>
-      </div>
-
-      <!-- sweets page -->
-      <div id="sweets-page" class="d-none">
-        <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">SWEETS</h1>
-              <h2 class="fs-5">Here you buy sweets</h2>
-              <hr />
-            </div>
-          </div>
-
-          <p>about page content</p>
-        </div>
-      </div>
-      <!-- signup page -->
-      <div id="signup-page" class="d-none">
-        <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">SIGNUP PAGE</h1>
-              <h2 class="fs-5">Here you can create you designer account</h2>
-              <hr />
-            </div>
-          </div>
-
-          <p>about page content</p>
-        </div>
-      </div>
-
-      <!-- login page -->
-      <div id="login-page" class="d-none">
-        <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">LOGIN PAGE</h1>
-              <h2 class="fs-5">Here you can log into your designer account.</h2>
-              <hr />
-            </div>
-          </div>
-
-          <p>about page content</p>
-        </div>
-      </div>
-
-      <!-- error 404 page -->
-      <div id="error-404-page" class="d-none">
-        <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">ERROR 404 PAGE</h1>
-              <h2 class="fs-5">EROR404</h2>
-              <hr />
-            </div>
-          </div>
-
-          <p id="return-to-home-page-link" class="cursor">
-            Click here to return to the hom page...
-          </p>
-        </div>
-      </div>
-    </main>
-
-    <footer class="border-top pt-3 bg-dark center">
-      <p class="text-light">Created by Hadas Wolf &copy;</p>
+    <footer class="border-top pt-3 bg-light center">
+      <p class="text-dark">Created by Hadas Wolf &copy;</p>
     </footer>
   </body>
 </html>
