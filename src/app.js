@@ -9,15 +9,17 @@ import {
   SIGNUP_PAGE_LINK,
   LOGIN_PAGE_LINK,
   RETURN_TO_HOME_PAGE_LINK,
-} from "../services/domService.js";
-import { onChangePage } from "./router.js";
+} from "./services/domService.js";
+import { onChangePage } from "./routes/router.js";
 
 //*************האזנה לאירועים */
 //ניתוב דפים
-HOME_PAGE_LINK.addEventListener("click", () => onchange(PAGES.HOME));
-ABOUT_PAGE_LINK.addEventListener("click", () => onchange(PAGES.ABOUT));
-CAKES_PAGE_LINK.addEventListener("click", () => onchange(PAGES.CAKES));
-SWEETS_PAGE_LINK.addEventListener("click", () => onchange(PAGES.SWEETS));
-SIGNUP_PAGE_LINK.addEventListener("click", () => onchange(PAGES.SIGNUP));
-LOGIN_PAGE_LINK.addEventListener("click", () => onchange(PAGES.LOGIN));
-RETURN_TO_HOME_PAGE_LINK.addEventListener("click", () => onchange(PAGES.HOME));
+HOME_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.HOME));
+ABOUT_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.ABOUT));
+CAKES_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.CAKES));
+SWEETS_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.SWEETS));
+SIGNUP_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.SIGNUP));
+LOGIN_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.LOGIN));
+RETURN_TO_HOME_PAGE_LINK.addEventListener("click", () =>
+  onChangePage(PAGES.HOME)
+);
