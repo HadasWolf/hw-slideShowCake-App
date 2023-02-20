@@ -32,10 +32,14 @@
     <title>PARTY CAKES-app</title>
   </head>
   <body>
+    <!-- *********************header********************************* -->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Party Cake</a>
+          <span id="home-page-link" class="navbar-brand cursor"
+            >Party Cake</span
+          >
+
           <button
             class="navbar-toggler"
             type="button"
@@ -47,19 +51,22 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse d-flex-md justify-contenet-between"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <!--  <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <span id="about-page-link" class="nav-link cursor" >About</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cakes</a>
+                <span id="cakes-page-link" class="nav-link cursor">Cakes</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sweets</a>
+                <span id="sweets-page-link" class="nav-link cursor">Sweets</span>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -72,8 +79,9 @@
                   Designers
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                  <li><a class="dropdown-item" href="#">Log In</a></li>
+                  <li><span id="signup-page-link" class="dropdown-item cursor" >Signup</span></li>
+                  <li><span id="login-page-link" class="dropdown-item cursor" >Login</span></li>
+                
 
                   <!-- <li>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -96,11 +104,119 @@
         </div>
       </nav>
     </header>
+    <!-- *********************main********************************** -->
+    <main>
+      <!--***********HOME PAGE************  -->
+      <div id="home-page" class="d-block">
+        <div class="container">
+          <!-- HOME PAGE TITLES -->
+          <div class="center">
+            <div class="col-12 col-md-10 col-xl-8">
+              <img src="./assets/images/cake.jpg" alt="cake background" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <main></main>
+      <!--***********ABOUT PAGE****************  -->
+      <!-- ----------להכניס כאן class="d-none"--------------------------- -->
+      <div id="about-page" class="d-none">
+        <div class="container">
+          <div class="center">
+            <div class="col-12 col-md-10 col-xl-8">
+              <h1 class="display-4">ABOUT Party Cake</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Temporibus accusamus, facere nihil quod, distinctio earum magnam
+                reiciendis non nisi qui placeat adipisci iure officia quos minus
+                illum itaque, corporis perferendis.
+                <h2>How It Workes</h2>
+                <!-- --------------להכניס כאן גריד לאייקון+ שורה. ב2 טורים -->
+                <p>Lorem ipsum,  sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum,  sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum,  sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum,  sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum,  sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum,  sit amet consectetur adipisicing elit.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!--***********CAKES PAGE****************  -->
+      <div id="cakes-page" class="d-none">
+        <div class="container">
+          <div class="canter">
+            <div class="col-12 col-md-10 col-xl-8">
+<h1 class="display-4">CAKES</h1>
+<h3>here you can look and choose your cake</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--***********SWEETS PAGE***************  -->
+        <div id="sweets-page" class="d-none">
+        <div class="container">
+          <div class="canter">
+            <div class="col-12 col-md-10 col-xl-8">
+<h1 class="display-4">SWEETS</h1>
+<h3>here you can look and choose your sweets</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--***********SIGNUP PAGE**************  -->
+<div id="signup-page" class="d-none">
+  <div class="container">
+     <div class="col-12 col-md-10 col-xl-8">
+    <h1 class="display-4">SIGHNUP</h1>
+  
+    <h3>here you have signingup form to fill</h3>
+<br>
+ <h3> <span>   Party cake </span>-designers- how it Workes </h3>  <!-- להכניס כאן עיצוב לוגו -->
+ 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio ad accusantium non, debitis id amet commodi est quaerat optio sed! Odit in vero ullam voluptate esse fugiat odio incidunt!</p>
+  <!--  <form action=""></form> -->
+  </div>
+
+  </div>
+
+      <!--***********LOG IN PAGE***************  -->
+      <div id="login-page" class="d-none">
+        <div class="container">
+          <div class="center">
+            <div class="col-12 col-md-10 col-xl-8">
+              <h1 class="display-4">LOGIN</h1>
+              <h2>here you login to your account</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--***********EROR 404 PAGE ***************  -->
+      <div id="eror-404-page" class="d-none">
+        <div class="container">
+          <div class="center">
+            <div class="col-12 col-md-10 col-xl-8">
+              <h1 class="display-4">EROR 404 PAGE</h1>
+              <h2>xxxxxxxxxxxxxxxx</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="return-to-home-page-link" class="cursor">
+            Click here to return to the hom page...
+          </p>
+        </div>
+      </div>
+      
+    </main>
+
+    <!-- *********************footer********************************* -->
     <footer class="border-top pt-3 bg-light center">
       <p class="text-dark">Created by Hadas Wolf &copy;</p>
     </footer>
   </body>
 </html>
+
