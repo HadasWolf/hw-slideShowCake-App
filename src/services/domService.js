@@ -18,3 +18,9 @@ export const LOGIN_PAGE_LINK = document.getElementById("login-page-link");
 export const RETURN_TO_HOME_PAGE_LINK = document.getElementById(
   "return-to-home-page-link"
 );
+
+/***************slider********** */
+export const SLIDER_IMAGE = document.getElementById("slider-image");
+export const SLIDER_DESCRIPTION = document.getElementById("slider-description");
+export const SLIDER_PREV_BTN = document.getElementById("slider-prev-btn");
+export const SLIDER_NEXT_BTN = document.getElementById("slider-next-btn");
