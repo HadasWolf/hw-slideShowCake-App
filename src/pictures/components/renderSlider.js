@@ -1,6 +1,6 @@
 import { SLIDER_IMAGE, SLIDER_DESCRIPTION } from "../../services/domService.js";
-import { SLIDER_NEXT_BTN, SLIDER_PREV_BTN } from "../../service/domService.js";
-import onChangeSliderPic from "../helpers/onChangeSliderPic";
+import { SLIDER_NEXT_BTN, SLIDER_PREV_BTN } from "../../services/domService.js";
+import onChangeSliderPic from "../helpers/onChangeSliderPic.js";
 
 let counter = 0;
 
