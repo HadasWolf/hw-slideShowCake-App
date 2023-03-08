@@ -7,8 +7,8 @@ const setCounter = (array, counter, controller = "") => {
   }
 
   if (controller === "prev") {
-    newcounter = counter > 0 ? counter - 1 : array.length - 1;
-    return newcounter;
+    newCounter = counter > 0 ? counter - 1 : array.length - 1;
+    return newCounter;
   }
 
   return 0;

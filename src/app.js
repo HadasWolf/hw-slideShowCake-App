@@ -1,5 +1,5 @@
-import "../routes/links.js";
-import renderSlider from "../pictures/components/renderSlider.js";
+import "./routes/links.js";
+import renderSlider from "./pictures/components/renderSlider.js";
 
 window.pictures = [
   {

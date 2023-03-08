@@ -16,7 +16,7 @@ class User {
   /**********************************קונסטרקטור- תיווך והענקת ערכים*******************************/
   constructor(user, users = []) {
     //מה לחפש מתוך האוביקט החדש user
-    const { address, phone, name, password } = user;   //מכאן נקבל את המידע
+    const { address, phone, name, password,email, isAdmin } = user;   //מכאן נקבל את המידע
 
     //מה לחפש מתוך המפתחות כתובת של האובייקט החדש
     const { state, country, city, street, houseNumber, zip } = address;

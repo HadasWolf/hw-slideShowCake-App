@@ -12,6 +12,8 @@ export const makeEveryFirstLetterCapital = (text) => {
   return splitText.join(" ");
 };
 
+
+
 // *****************************************מתודה randomNumBetween**********************************************
 export const randomNumBetween = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -19,8 +21,10 @@ export const randomNumBetween = (min, max) => {
 const solution = makeEveryFirstLatterCapital(term); //הפעלה
 console.log(solution); //נבדוק שהפונקציה עובדת
 
+
+
 // **********************************************מתודה generateId**********************************************
-export const generateId = (array, min, max) => {
+export const generateUniqId = (array, min, max) => {
   if (array.length >= max - min)
     throw new Error("you reached max items in the array!");
   if (min >= max) throw new Error("min number must be lower then max number");
